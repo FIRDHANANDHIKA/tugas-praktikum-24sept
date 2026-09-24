@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adidas Suede Vault | Original Suede Store</title>
+  <link rel="stylesheet" href="prakdeadline24sept.css">
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <span class="brand-badge">ORIGINAL</span>
+        <span>ADI-SUEDE</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#catalog">Koleksi Suede</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-theme">🌙 Mode Gelap</button>
+        <button id="cartBtn" class="cart-btn" aria-label="Keranjang Belanja">
+          🛒 <span id="cartCount" class="badge">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section id="hero" class="hero">
+    <div class="container hero-wrapper">
+      <div class="hero-text">
+        <span class="tag">Authentic Suede Series</span>
+        <h1>TOKO SEPATU ADIDAS FIRDHAN <span class="highlight">Suede Original</span></h1>
+        <p>Jelajahi koleksi Adidas Suede klasik pilihan: Gazelle, Campus, City Series dan Spezial 100% Original.</p>
+        <a href="#catalog" class="btn btn-primary">Lihat Koleksi</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-badge">BESTSELLER</div>
+        <h2>Adidas Gazelle Suede</h2>
+        <p>Warna Navy / White Stripe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog Produk & Fitur JS DOM -->
+  <section id="catalog" class="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <h2>KOLEKSI SEPATU SUEDE</h2>
+        
+        <!-- Filter & Search (Interaksi DOM) -->
+        <div class="filter-controls">
+          <input type="text" id="searchInput" placeholder="Cari nama sepatu..." />
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="gazelle">Gazelle</button>
+            <button class="filter-btn" data-category="campus">Campus</button>
+            <button class="filter-btn" data-category="spezial">Spezial</button>
+            <button class="filter-btn" data-category="cityseries">City Series</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Produk Tempat JS Merender Sepatu -->
+      <div class="product-grid" id="productGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Tentang Bahan Suede -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2>Mengapa Pilih Suede Original?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Tekstur Lembut</h3>
+          <p>Dibuat dari bahan kulit suede pilihan berkualitas tinggi yang memberikan kenyamanan maksimal.</p>
+        </div>
+        <div class="feature-card">
+          <h3>100% Authentic</h3>
+          <p>Jaminan keaslian dengan garansi uang kembali jika barang terbukti tidak original.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Desain Timeless</h3>
+          <p>Siluet klasik 80-an dan 90-an yang tetap bergaya di setiap era.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Adidas Suede Vault. Dibuat tanpa Bootstrap/Tailwind.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Keranjang Belanja (DOM Interactive) -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Keranjang Belanja</h2>
+      <ul id="cartItemsList" class="cart-items-list">
+        <!-- Item keranjang dimasukkan via JS -->
+      </ul>
+      <div class="cart-summary">
+        <p>Total: <strong id="cartTotal">Rp 0</strong></p>
+        <button id="checkoutBtn" class="btn btn-primary btn-block">Checkout (WhatsApp)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="prakdeadline24sept.js"></script>
+</body>
+</html>
